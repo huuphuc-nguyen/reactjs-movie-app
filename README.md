@@ -1,6 +1,7 @@
 # Movie App
 ## I. Project description
-- This project following a tutorial using ReactJs and Redux Toolkit. You can find the instruction [here]([https://react.dev/learn/tutorial-tic-tac-toe](https://www.youtube.com/watch?v=2kL28Qyw9-0&t=6348s)).
+- This project following a tutorial to learn how to use **Redux Toolkit**.
+- You can find the instruction [here]([https://react.dev/learn/tutorial-tic-tac-toe](https://www.youtube.com/watch?v=2kL28Qyw9-0&t=6348s)).
 ## II.How to run the program
 |To execute the program|To view code|
 |------------|:---------------|
