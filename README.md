@@ -18,7 +18,7 @@ Welcome to the **Movie App**, a sleek application built using **React** and **Re
 - **Redux Toolkit** for state management.
 
 ## 🌐 Demo
-🔗 Try the app live: [Movie App Demo](https://movieapp-felixnguyen.vercel.app/)
+🔗 Try the app live: [Movie App Demo](https://felixnguyen.dev/movieapp/)
 
 ## 📚 Tutorial Reference
 🎥 Learn more through this [YouTube Tutorial](https://www.youtube.com/watch?v=2kL28Qyw9-0&t=6348s)
