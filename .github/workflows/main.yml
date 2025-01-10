@@ -1,0 +1,30 @@
+name: Deploy Portfolio To VPS
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v2
+
+    - name: SSH Remote Commands
+      uses: appleboy/ssh-action@v1.2.0
+      with:
+        host: ${{ secrets.VPS_HOST }}
+        username: ${{ secrets.VPS_USER }}
+        key: ${{ secrets.VPS_SSH_KEY }}
+        port: ${{ secrets.VPS_PORT }}
+        proxy_port: ${{ secrets.VPS_PORT }}
+        script: |
+          cd ~/gitproject/ReactJs-Movie-App
+          git pull origin main
+          docker build -t movieapp .
+          docker stop movieapp-container || true
+          docker rm movieapp-container || true
+          docker run -d --name movieapp-container -p 3002:3002 movieapp
