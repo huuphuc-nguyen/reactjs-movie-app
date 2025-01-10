@@ -8,7 +8,7 @@ import { store } from './features/store';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.Suspense>
-    <BrowserRouter>
+    <BrowserRouter basename=".">
       <Provider store={store}>
         <App />
       </Provider>
