@@ -26,7 +26,7 @@ WORKDIR /app
 COPY --from=build /react-app/build /app
 
 # Expose the port for the app
-EXPOSE 3002
+EXPOSE 3000
 
 # Serve the app using a lightweight HTTP server
-CMD ["npx", "serve", "-s", "-l", "3002"]
+CMD ["npx", "serve", "-s", "-l", "3000"]
